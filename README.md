@@ -1,6 +1,8 @@
-# Ordered binary tree implementation using Java 17  
+# Type-safe polymorphic binary search tree (BST) implementation using Java 17  
   
-This is an exercise to implement a polymorphic unbalanced ordered binary tree using Java `Generics`, `Optional`, and `Record`.  
+This is an exercise to implement a type-safe polymorphic (unbalanced) BST in a thread-safe way using Java `Generics`, `Optional`, and `Record`.  Being a BST, the time complexity for searching, insertion and deletion are as follows:
+- average case: O(h) where h is the height of the tree
+- worst case: O(n) where n is the number of nodes
   
 Using both iterative and recursive approaches, the tree implements the following methods:  
 1. Add item; the item is discarded if it already exists.
