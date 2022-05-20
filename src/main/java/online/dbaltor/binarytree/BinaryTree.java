@@ -76,9 +76,9 @@ public class BinaryTree {
         });
     }
 
-    public static <T extends Comparable<T>> int depth(Optional<TreeNode<T>> tree) {
+    public static <T extends Comparable<T>> int height(Optional<TreeNode<T>> tree) {
         return tree
-            .map(node -> Integer.max(depth(node.left), depth(node.right)) + 1)
+            .map(node -> Integer.max(height(node.left), height(node.right)) + 1)
             .orElse(0);
     }
 
@@ -156,8 +156,8 @@ public class BinaryTree {
         maximum(tree).ifPresent(process);
         System.out.println("=========== Minimum ===========");
         minimum(tree).ifPresent(process);
-        System.out.println("=========== Depth ==========");
-        System.out.println(depth(tree));
+        System.out.println("=========== height ==========");
+        System.out.println(height(tree));
 
         System.out.println("=========== Removing C ==========");
         tree = remove(tree, "C");

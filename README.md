@@ -9,7 +9,7 @@ Using both iterative and recursive approaches, the tree implements the following
 1. Remove item
 1. Maximum item
 1. Minimum item
-1. Depth
+1. Height
 1. In-order depth-first traversal
 1. Pre-order depth-first traversal
 1. Post-order depth-first traversal

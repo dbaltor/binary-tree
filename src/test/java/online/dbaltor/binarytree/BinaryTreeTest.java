@@ -97,11 +97,11 @@ class BinaryTreeTest {
         assertIterableEquals(bfsTraversal, traversalResult);
     }
 
-    @Test void shouldCalculateDepth() {
+    @Test void shouldCalculateHeight() {
         // when
-        var treeDepth = depth(tree);
+        var treeHeight = height(tree);
         // then
-        assertEquals(5, treeDepth);;
+        assertEquals(5, treeHeight);
     }
 
     @Test void shouldRetrieveMaximumItem() {
