@@ -4,6 +4,7 @@
 .project
 .settings/
 .vscode/
+.idea
 
 # build artifacts
 build
